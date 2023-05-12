@@ -846,3 +846,41 @@ h3{
 }
 
 
+.blog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .blog-item {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px;
+  }
+  
+  .blog-item img {
+    width: 200px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .blog-item:hover img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .blog-description {
+    margin-left: 20px;
+  }
+  
+  .blog-description h2 {
+    font-size: 24px;
+  }
+  
+  .blog-description p {
+    font-size: 16px;
+  }
+  
+
+
