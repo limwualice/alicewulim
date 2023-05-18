@@ -1,15 +1,15 @@
-#Alice's Portfolio
+# Alice's Portfolio
 
 Welcome to my portfolio! This repository showcases my skills, projects, and achievements as a data scientist and mathematician. Feel free to explore and learn more about my background and experiences.
 
 
 <img src="screenshot.png">
 
-##About Me
+## About Me
 
 I am a data scientist with a strong background in mathematics. With a PhD in Mathematics from Syracuse University, I have a solid foundation in statistical analysis, machine learning, and data modeling. I am passionate about leveraging data-driven insights to solve complex problems and make informed decisions.
 
-##Projects
+## Projects
 
 Sushi Adventure
 
