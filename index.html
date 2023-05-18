@@ -1,225 +1,311 @@
- 
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="with=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.ico">
-	<title>Alice, PhD | Data Scientist</title>
-	<link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="https://kit.fontawesome.com/aced17f048.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<title>Alice Wu Lim</title>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin&family=Inter:wght@200&family=Open+Sans:wght@300&family=Outfit:wght@200;300;400&family=Questrial&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet"> 	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="favicon.ico">
+	<script src="https://kit.fontawesome.com/aced17f048.js" crossorigin="anonymous"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,300&display=swap" rel="stylesheet"> 
-    
-    
-    
+
+	
 </head>
-
 <body>
-<section class="header">
-    <nav>
-        <a href="index.html"><img src="images/icon.jpg"></a>
-        <div class="nav-links" id="navLinks">
-            
-            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
 
-            
+<div class="row">
+	<div class="left-column">
+		<div class="top-half">
+			<p style="font-size: 60px; font-weight: 500; color: rgb(0, 0, 0); margin-bottom: 5px;">ALICE WU LIM <a><img src="icon.jpg" width="50px" style="margin: 0 auto; border-radius: 50%; filter: opacity(90%);"></a></p>
+			<p style="letter-spacing:1px; line-height: 1.5; font-family: 'Roboto', sans-serif; font-size: 21px; font-weight:300; margin-top:70px;">
+				<!-- I'm a data scientist, a math PhD, and a human. -->
+				 
+			</p><br><br><br>
+			
+			<a style="margin-left:30px" href="https://www.linkedin.com/in/alicewulim/" target="_blank">
+				<i class="fa-brands fa-linkedin"></i>
+			</a>
+			<a href="https://github.com/limwualice" target="_blank">
+				<i class="fa-brands fa-github"></i>
+			</a>
+			<a style="font-size: 30px; font-weight: 500; color: white; text-decoration: none;" target="_blank">
+				[limwualice at gmail dot com]
+			</a>
 
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="datascienceresearchmathresearch.html">DATA SCIENCE + MATH RESEARCH</a></li>
-                <li><a href="researchtalks.html">PRESENTATIONS</a></li>
-                <li><a href="cvresume.html">RESUME/CV</a></li>
-                <li><a href="learningresources.html">LEARNING RESOURCES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="blanche.html">PERSONAL</a></li>
-               
-            </ul>
+			
+			
+		</div>
+		<div class="bottom-half">
+			<button class="button active" id="button1" data-target="content1" onclick="showContent('content1')">MACHINE LEARNING PROJECTS</button>
+			<button class="button" data-target="content2" onclick="showContent('content2')">PHD RESEARCH</button>
+			<button class="button" data-target="content3" onclick="showContent('content3')">RESUME</button>
+			<button class="button" data-target="content4" onclick="showContent('content4')">LINKS</button>
+			
+		</div>
+	</div>
+	
+	<div class="right-column">
+		<div class="content" id="content1">
+		
+
+			<div style="margin-bottom: 60px;"></div>
+			<p style="letter-spacing:7px; text-align: left; font-size: 80px; font-weight: 800; color: #000000; margin-top: 50px;">ML<br> PROJECTS</p>
+
+			<p style="font-size: 24px; font-weight: 500; color: black; margin-bottom: 5px;">Sushi Adventure</p>
+			<a href="https://github.com/limwualice/sushi-adventure" style="font-size: 18px; font-weight: 500; color: #555555; text-decoration: none;" target="_blank">
+				[GitHub]
+			</a>
+			<p style="font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px;">
+				Experience the ultimate sushi exploration with Sushi Adventure, a website dedicated to uncovering the hidden gems of the Los Angeles sushi world. 
+				With our recommendation system, we curate personalized sushi recommendations based on ratings, reviews, and price information. 
+				Find the perfect sushi spot that aligns with your preferences and embark on a memorable dining experience. <br><br>
+				Tech used: HTML, CSS, JavaScript, Python, Flask, Machine Learning, Data Analysis, Yelp Fusion API, Git/GitHub, Responsive Design, 
+				Full-Stack Development, Front-End Development, Back-End Development, Web Application, User Experience (UX), Data Visualization, 
+				Deployment (e.g., Heroku, GCP, AWS)
+			</p>
+	
+
+			<div style="margin-bottom: 50px;"></div>
+
+			<p style="font-size: 24px; font-weight: 500; color: black; margin-bottom: 5px;">Document Summarizer </p>
+			<a href="https://github.com/limwualice/document-summarizer" style="font-size: 18px; font-weight: 500; color: #555555; text-decoration: none;" target="_blank">
+				[GitHub]
+			</a>
+			<p style="font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px;">
+				Document Summarizer is a cutting-edge project that transforms the way we handle extensive text content. 
+				In today's information-driven world, having a tool that can swiftly and accurately distill key insights from lengthy documents is crucial. 
+				Using state-of-the-art natural language processing techniques, Document Summarizer automatically analyzes and condenses large text documents into clear and concise summaries. 
+				Whether you're a researcher, student, or professional working with research papers, reports, or articles, this tool will significantly streamline your workflow, saving you valuable time and effort.<br><br>
+				Tech used: Natural Language Processing (NLP), Text Summarization, Machine Learning, Artificial Intelligence, Python, Flask, OpenAI, GPT-3, Web Application, API Integration, Text Processing, Data Science, Software Development, GitHub, Command Line Interface (CLI), Text Analysis, Sentiment Analysis, Language Model, Information Extraction, Data Preprocessing
+			</p>
+
+
+			<div style="margin-bottom: 50px;"></div>
+
+			<p style="font-size: 24px; font-weight: 500; color: black; margin-bottom: 5px;"> Lucky Parking (Hack for LA) </p>
+			<a href="https://github.com/hackforla/lucky-parking/" style="font-size: 18px; font-weight: 500; color: #555555; text-decoration: none;" target="_blank">
+				[GitHub]
+			</a>
+			<p style="font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px;">
+				As a passionate volunteer with Hack for LA, I am actively involved in a project focused on visualizing parking data to drive understanding of the effects of parking policies on a neighborhood-by-neighborhood basis in the vibrant City of Los Angeles. 
+				Leveraging my technical expertise, I have successfully connected a robust data pipeline to the API and seamlessly integrated Google Cloud Platform (GCP) with Looker. 
+				This collaborative effort aims to provide stakeholders with an intuitive platform that presents comprehensive parking data in a visually compelling manner.<br>
+				By volunteering my skills and contributing to this project, I am playing a crucial role in empowering communities to make data-informed decisions regarding urban planning and transportation strategies. 
+				Through the visualization of parking data, we aim to raise awareness, facilitate meaningful discussions, and drive positive change in the City of Los Angeles.<br><br>
+				Tech Used: Data pipelines, APIs, Google Cloud Platform (GCP), Looker, Data visualization, Data analysis, Urban planning, Transportation data
+			</p>
+
+			<div style="margin-bottom: 70px;"></div>
+
+		</div>
+        <div class="content" id="content2">
+			<div style="margin-bottom: 60px;"></div>
+			<p style="letter-spacing:7px; text-align: left; font-size: 80px; font-weight: 800; color: #000000; margin-top: 50px;">PHD RESEARCH</p>
+
+			<p style="font-size: 24px; font-weight: 500; color: black; margin-bottom: 5px;">The Splitting Theorem and Topology of Noncompact Spaces with Nonnegative N-Bakry Émery Ricci Curvature</p>
             
-        </div>
-        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+			<a href="https://arxiv.org/abs/2001.06028" style="font-size: 18px; font-weight: 500; color: #555555; text-decoration: none;" target="_blank">
+				[arXiv]
+			</a>
+            <p>In my research paper, I present a generalization of topological findings previously established for noncompact manifolds with nonnegative Ricci curvature. Specifically, I extend these results to spaces characterized by nonnegative N-Bakry Émery Ricci curvature. The study focuses on investigating the Splitting Theorem and the geodesic loops to infinity property within the context of spaces exhibiting nonnegative N-Bakry Émery Ricci curvature. Furthermore, I demonstrate that if Mn represents a complete, noncompact Riemannian manifold with nonnegative N-Bakry Émery Ricci curvature, where N>n, the homology group Hn−1(M,ℤ) is determined to be 0. This research has been published in the Proceedings of the AMS.</p>
 
                 
-    </nav>
         
-        
-    <div class="text-box">
-        <h2>Welcome to my website!</h2>
-        <p> I received my PhD in mathematics from Syracuse University<br>Most recently, I joined City of Hope as a data scientist with a research fellowship.<br> I'm currently working as a volunteer data scientist at Hack for LA, where I'm working on exciting data engineering problems.<br>I made this website using html and css. </p>
-        <a href="resume.pdf" class="hero-btn" download="resume.pdf" target="_blank">Click here to download my resume</a>
-    </div>
-        
-        
- 
-        
-</section>
-    
+            <p style="font-size: 24px; font-weight: 500; color: black; margin-bottom: 5px;">Locally Homogeneous Non-gradient Quasi-Einstein 3-Manifolds.<p>
 
-    
-    
-<!----- datascienceresearchmathresearch----->    
-    
-    
-<section class="datascienceresearchmathresearch">
-    <h1> Summary of my work:</h1>
-    <br>
-    <a href="datascienceresearchmathresearch.html" class="hero-btn red-btn" target="_blank">CLICK FOR DATA SCIENCE + RESEARCH</a>
-    
+				<a href="https://arxiv.org/abs/2009.00720" style="font-size: 18px; font-weight: 500; color: #555555; text-decoration: none;" target="_blank">
+					[arXiv]
+				</a>
+            <p>In this paper, we classify the compact locally homogeneous non-gradient m-quasi Einstein 3-manifolds. Along the way, we prove that given a compact quotient of a Lie group of any dimension that is m-quasi Einstein, the potential vector field X must be left invariant and Killing. We also classify the nontrivial m-quasi Einstein metrics that are a compact quotient of be the product of two Einstein metrics. We also show that S1 is the only compact manifold of any dimension which admits a metric which is nontrivially m-quasi Einstein and Einstein. This research has been published in the Advances in Geometry.</p>
 
-    <div class="row">
-        <div class="datascienceresearchmathresearch-col">
-            <h3>Data Science Research</h3>
-            <h4>Patient-similarity project (manuscript pending)</h4>
-            <p>  I used machine learning tools to better understand breast cancer genomic clusters. Specifically, I conducted research identifying patient features that highly correlated with breast cancer genomic clusters. I found that t-staging, and m-staging (as in tnm-staging) are correlated with genomic clustering. <br><br>I used SQL to pull and prepare data from several tables in Poseidon in the DNAnexus (AWS) environment. I engineered new features from the available data including features like age of onset of breast cancer. I gained key insights using various data visualizations, including violin plots, t-sne visualizations, raincloud plots, and histograms. I used permutation method to find p-values. I also used the Kneedle algorithm to find concavity of the clusters. </p>
-        </div>
         
-        <div class="datascienceresearchmathresearch-col">
-            <h3>Math Research</h3>
-            <h4>The Splitting Theorem and Topology of Noncompact Spaces with Nonnegative N-Bakry Émery Ricci Curvature</h4>
-            <p> Abstract: In this paper, we generalize topological results known for noncompact manifolds with nonnegative Ricci curvature to spaces with nonnegative N-Bakry Émery Ricci curvature. We study the Splitting Theorem and a property called the geodesic loops to infinity property in relation to spaces with nonnegative N-Bakry Émery Ricci Curvature. In addition, we show that if Mn is a complete, noncompact Riemannian manifold with nonnegative N-Bakry Émery Ricci curvature where N>n, then Hn−1(M,ℤ) is 0</p>
-            <h4>Locally Homogeneous Non-gradient Quasi-Einstein 3-Manifolds</h4>
-            <p>Abstract: In this paper, we classify the compact locally homogeneous non-gradient m-quasi Einstein 3-manifolds. Along the way, we prove that given a compact quotient of a Lie group of any dimension that is m-quasi Einstein, the potential vector field X must be left invariant and Killing. We also classify the nontrivial m-quasi Einstein metrics that are a compact quotient of be the product of two Einstein metrics. We also show that S1 is the only compact manifold of any dimension which admits a metric which is nontrivially m-quasi Einstein and Einstein.</p>
-        </div>
         
-    </div>        
         
+        
+        
+            <p style="font-size: 24px; font-weight: 500; color: black; margin-bottom: 5px;">My thesis:</p>
+			<a href="https://surface.syr.edu/cgi/viewcontent.cgi?article=2319&context=etd" style="font-size: 18px; font-weight: 500; color: #555555; text-decoration: none;" target="_blank">
+				[thesis]
+			</a>
+            <p>I'm so excited to share my thesis with you, and I hope you'll find it as fun to read as I found it enjoyable to write! All illustrations in the thesis were created using Procreate and Gravit. <br><br>
 
-</section> 
-    
-    
-    
-    
-   
-    
-<!----- researchtalksindex----->    
-    
- 
-<section class="present">
-    <h1>Examples of my research presentations</h1>
-    <br>
-    <a href="researchtalks.html" class="hero-btn red-btn" target="_blank">CLICK FOR RESEARCH TALKS</a>
-    
-    
-    <div class="row">
-        <div class="present-col">
-            
-            <img src="poster_images/Poster3.png">
-            
-            <div class="layer">
-            <h3>DATA SCIENCE</h3>
-            </div>
-        
+				Abstract: The thesis begins with an intuitive introduction to calculus on manifolds for non-mathematicians, followed by a semi-intuitive explanation of Ricci curvature for non-geometers. We provide descriptions of N-Bakry-Émery Ricci curvature and N-quasi Einstein metric.
+				
+				<br>
+				
+				The main focus of this thesis revolves around the N-Bakry-Émery Ricci curvature and N-quasi Einstein metric.
+				
+				<br>
+				
+				Our first set of key results encompasses the generalization of topological findings previously established for noncompact manifolds with nonnegative Ricci curvature to spaces exhibiting nonnegative N-Bakry Émery Ricci curvature. We delve into the exploration of the Splitting Theorem and a property known as the geodesic loops to infinity property in relation to spaces characterized by nonnegative N-Bakry Émery Ricci curvature. Additionally, we prove that if M^n is a complete, noncompact Riemannian manifold with nonnegative N-Bakry Émery Ricci curvature, where N > n, then the homology group Hn-1(M, Z) is 0.
+				
+				<br>
+				
+				In our second set of major findings, we classify compact locally homogeneous non-gradient N-quasi Einstein 3-manifolds. Along the way, we establish that for a compact quotient of a Lie group of any dimension that is N-quasi Einstein, the potential vector field X must be both left invariant and Killing. Furthermore, we provide a classification of nontrivial N-quasi Einstein metrics that are compact quotients of the product of two Einstein metrics. Lastly, we demonstrate that S^1 is the sole compact manifold of any dimension that admits a metric which is nontrivially N-quasi Einstein and Einstein.</p>
+			
+			<p style="font-size: 24px; font-weight: 500; color: black; margin-bottom: 5px;">An example related to the N-Bakry-Émery Ricci curvature and a punctured torus</p>
+			<a href="Punctured_Torus_Example.pdf" style="font-size: 18px; font-weight: 500; color: #555555; text-decoration: none;" download="resume.pdf" target="_blank">
+				[pdf]
+			</a>
+            <p>Abstract:This is a note about relates to the N-Bakry-Émery Ricci curvature and the punctured torus. Specifically, we attempt to answer the question,“Can a punctured torus admit metrics which satisfy nonnegative ∞-Bakry-Émery Ricci curvature?"</p>
         
         </div>
-        <div class="present-col">
-            
-            <img src="poster_images/Poster1.jpg">
-            
-            <div class="layer">
-            <h3>MATH</h3>
-            </div>
-        
-        
+    
+		<div class="content" id="content3">
+			<div style="margin-bottom: 60px;"></div>
+			<p style="letter-spacing:7px; text-align: left; font-size: 80px; font-weight: 800; color: #000000; margin-top: 50px;">RESUME</p>
+
+			<!-- <p style="font-size: 24px; font-weight: 500; color: black; margin-bottom: 5px;">My resume</p> -->
+			<a href="resume.docx" style="font-size: 18px; font-weight: 500; color: #555555; text-decoration: none;" download="resume.pdf" target="_blank">
+				[download]
+			</a><br><br>
+			<div class="resume">
+				<body>
+					<h1>Alice Wu Lim, PhD | Data Scientist</h1>
+					
+					Email: limwualice at gmail dot com
+					
+				
+					<hr>
+				
+					<h2>Education</h2>
+				
+					<h3>Syracuse University / PhD in Mathematics</h3>
+					<p>August 2015 - May 2021</p>
+					<p>Thesis in Differential Geometry<br>Received Kibbey Prize for excellence in PhD research.</p>
+				
+					<h3>Syracuse University / MS in Mathematics</h3>
+					<p>August 2015 - May 2018</p>
+					<p>Relevant courses include: Probability and Statistics (4 graduate courses), Enumeration, Design, and Matroids, Graph Theory, Functions in Complex Variables, Calculus on Manifolds</p>
+				
+					<h3>University of California, Los Angeles / BS in Mathematics</h3>
+					<p>August 2011 - May 2015</p>
+					<p>Relevant courses include: Fourier Analysis, Introduction to C++</p>
+				
+					<hr>
+				
+					<h2>Experience</h2>
+				
+					<h3>Hack for LA / Data Scientist (Volunteer)</h3>
+					<p>January 2023 - Current</p>
+					<ul>
+					<li>Designing and implementing a data cleaning pipeline to transform raw input data from the Socrata API related to LA city parking and update the Google Cloud Platform database with geospatial data</li>
+					<li>Developing a list of data cleaning steps to ensure the data meets the client's requirements</li>
+					<li>Creating code to extract, transform, and load data into the database</li>
+					<li>Conducting multiple tests to ensure data is correctly formatted and cleaned</li>
+					<li>Deploying the pipeline to GCP for real-time data processing and updates</li>
+					<li>Managing the end-to-end project, from initial requirements gathering to final deployment, ensuring timelines and deliverables are met</li>
+					<li>Visualized data using Looker Studio</li>
+					<li>Collaborated with team members to troubleshoot and resolve any issues that arose during the project</li>
+						</ul>
+						<h3>City of Hope / Data Scientist (Research fellowship)</h3>
+						<p>April 2022 - October 2022</p>
+						<ul>
+						<li>Used an unsupervised learning machine learning predictive model in Python and SQL, statistical model, and advanced data analysis to discover statistically significant correlation between breast cancer genomic clusters and tnm-staging as well as breast cancer biomarker sets.</li>
+						<li>Learned about breast cancer and machine learning techniques, while adapting projects to doctors’ needs.</li>
+						<li>Completed technical portion of data science project, manuscript is now in preparation.</li>
+						<li>How this was accomplished:</li>
+						<ul>
+							<li>Goal: use unsupervised learning model to cluster large datasets of patient genomic data, find statistical correlation between engineered patient features and the detected clusters</li>
+							<li>Collected big data: Queried terabytes of data from over 30 satellite hospital databases; transformed and combined data into cleansed dataframes with hundreds of features</li>
+							<li>Clustered data: Constructed k-modes clustering model and detected genomic clusters of patient data in order to analyze genomic features</li>
+							<li>Engineered features: Used domain knowledge to engineer dozens of new features from patient data to test for correlation with genomic clusters</li>
+							<li>Performed statistical analyses using analytical tools: Performed non-parametric significance testing which revealed statistically significant correlations between several patient features and the genomic clusters</li>
+							<li>Communicated findings: Presented the findings to business partners, collaborators, and non-experts</li>
+						</ul>
+						</ul>
+						<h3>Syracuse University / PhD Researcher</h3>
+						<p>August 2015 - May 2021</p>
+						<ul>
+						<li>Wrote 2 single-author differential geometry research papers which were accepted for publication in prestigious journals</li>
+						<li>Used Python to compute explicit solutions to N-quasi Einstein equation under certain constraints</li>
+						<li>Gave 12 presentations at conferences and invited talks where I communicated results to various sized audiences</li>
+						<li>Received Kibbey award for demonstrating excellence in PhD research</li>
+						<li>Studied graduate level statistics and probability courses</li>
+						<li>Studied Calculus of variations and Euclidean and non-Euclidean geometry, which have applications in mathematical optimization and satellite access geometry, respectively</li>
+						</ul>
+						<hr>
+						<h2>Research Papers</h2>
+						<ul>
+						<li>Clustering whole-exome sequences of breast cancer reveals association with staging and molecular subtype, in preparation</li>
+						<li>The Splitting Theorem and Topology of Noncompact Spaces with Nonnegative N-Bakry Emery Ricci Curvature; Proceedings of the AMS, May 2021; <a href="https://doi.org/10.1090/proc/15240">https://doi.org/10.1090/proc/15240</a></li>
+						<li>Locally Homogeneous Non-gradient Quasi Einstein 3-Manifolds; Advances in Geometry, January 2022; <a href="https://doi.org/10.1515/advgeom-2021-0036">https://doi.org/10.1515/advgeom-2021-0036</a></li>
+						</ul>
+						<hr>
+						<h2>Presentations</h2>
+						<ul>
+						<li>Gave 3 talks at City of Hope about my data science/breast cancer research</li>
+						<li>Gave 12 invited math talks at various conferences and institutions</li>
+						<li>Presentations were to various sized audiences from small departments to large conferences</li>
+						<li>My goal with giving presentations is to incorporate as many visual aids as I can to get my point across. I make sure to start by stating the goal of my project and spend the rest of the talk exploring how I met my goal.</li>
+						<li>See <a href="https://www.alicewulim.com/researchtalks.html">here</a> for a link to some of my presentations</li>
+						</ul>
+				</body>
+			</div>
         </div>
-        
-        <div class="present-col">
-            
-            <img src="poster_images/poster2.jpg">
-            
-            <div class="layer">
-            <h3>MATH</h3>
-            </div>
-        
-        
+
+		<div class="content" id="content4">
+			<div style="margin-bottom: 60px;"></div>
+			<p style="letter-spacing:7px; text-align: left; font-size: 80px; font-weight: 800; color: #000000; margin-top: 50px;">LINKS</p>
+
+			<p style="font-size: 20px; font-weight: bold; color: black; margin-bottom: -10px;">Email</p><br>
+			<a style="font-size: 18px; font-weight: 500; color: white; text-decoration: none;">
+				[limwualice at gmail dot com]
+			</a><br>
+			<p style="font-size: 16px; margin-bottom: 5px;">
+				Feel free to message me at the email address above for professional things!
+			</p>
+
+			<p style="font-size: 20px; font-weight: bold; color: black; margin-bottom: -10px;">Learning Machine Learning</p><br>
+			<a href="https://limwualice.github.io/learningmachinelearning/" style="font-size: 18px; font-weight: 500; color: #555555; text-decoration: none;" target="_blank">
+				[website]
+			</a><br>
+			<p style="font-size: 16px; margin-bottom: 5px;">
+				This is a blog that I made where I'm documenting my understanding of machine learning theory. I'm also having fun using procreate and html+css tools. Let me know if you have suggestions or comments.  
+			</p>
+			
+
+			<p style="font-size: 20px; font-weight: bold; color: black; margin-bottom: -10px;">Linkedin</p><br>
+			<a href="https://www.linkedin.com/in/alicewulim/" style="font-size: 18px; font-weight: 500; color: #555555;  text-decoration: none;" target="_blank">
+				[linkedin]
+			</a><br>
+			<p style="font-size: 16px; margin-bottom: 5px;">
+				I also welcome Linkedin messages about professional things. If you'd like to have a zoom call, please message me here! 
+			</p>
+
+			<p style="font-size: 20px; font-weight: bold; color: black; margin-bottom: -10px;">Github</p><br>
+			<a href="https://github.com/limwualice" style="font-size: 18px; font-weight: 500; color: #555555;  text-decoration: none;" target="_blank">
+				[github]
+			</a><br>
+			<p style="font-size: 16px; margin-bottom: 5px;">
+				This is what I'm currently working on. Let's collaborate! 
+			</p>
+			
+			
         </div>
-        
-        
-    
-    </div>
-    
-    
-    
-</section>    
-    
-    
 
-<!-------blanche------->
 
-<section class="blanche">
-    <h1>This is Blanche</h1>
-    <div class="icons_blanche">
-        <i class="fa-solid fa-cat fa-lg"></i><i class="fa-solid fa-cat fa-lg"></i><i class="fa-solid fa-cat fa-lg"></i><br><br>
-    </div>
-    
-    <a href="blanche.html" class="hero-btn red-btn" target="_blank">CLICK FOR BLANCHE</a>
-    
-    
-    
-    <div class="row">
-        <div class="blanche-col">
-            <img src="images/blanche1.png">
-        </div>
-        <div class="blanche-col">
-            <img src="images/blanche2.jpg">
-  
-        </div>
-        <div class="blanche-col">
-            <img src="images/blanche4.jpg">
+	<script>
+		window.onload = function() {
+			showContent('content1');
+		}
 
-        </div>
-    </div>
-    
-</section>
+		function showContent(contentId) {
+			// Hide all content divs
+			var contentDivs = document.querySelectorAll('.right-column > div');
+			for (var i = 0; i < contentDivs.length; i++) {
+				contentDivs[i].style.display = 'none';
+			}
 
-    
-    
-    
-<!-------Call to Action------->
-    
-    
-    
-<!--
-<section class="cta">
-    <h1>Enroll for our various online courses</h1>
-    <a href="" class="hero-btn"> Contact Us!</a>
-    <p>Get a degree in your underwear! Just don't stand up on camera please! </p>
-    
-</section>
--->
-    
-<!------- Footer ------->
+			// Show the selected content div
+			var selectedContent = document.getElementById(contentId);
+			selectedContent.style.display = 'block';
 
-<section class="footer">
-    <h4>ABOUT ME</h4>
-    <p>Send me an email at: <br>limwualice at gmail dot com </p>
-    
-    <div class="icons">
-        <a href="https://www.linkedin.com/in/alicewulim/" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
-    
-    </div>
-    <p>Made using html and css <i class="fa-solid fa-heart"></i> Alice Wu Lim</p>
-    
-</section>
-    
-    
-    
-    
-<!-------- JavaScript for Toggle Menu-------->    
-    
-
-<script>
-    var navlinks=document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right= "0";
-        
-    }
-    function hideMenu(){
-        navLinks.style.right= "-200px";
-        
-    }
-    
-</script>
-
-</body>
-</html>
+			// Set the active button class
+			var buttons = document.querySelectorAll('.button');
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].classList.remove('active');
+			}
+			document.querySelector('[data-target="'+contentId+'"]').classList.add('active');
+		}
+	</script>
+</body>	
