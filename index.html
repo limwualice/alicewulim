@@ -43,7 +43,7 @@
 		</div>
 	</div>
 	
-	<div class="right-column">
+	<div class="right-column" id="content-container">
 		<div class="content" id="content1">
 		
 
@@ -282,30 +282,37 @@
 			
 			
         </div>
+	</div>
 
 
 	<script>
 		window.onload = function() {
-			showContent('content1');
+		  showContent('content1');
 		}
-
+	  
 		function showContent(contentId) {
-			// Hide all content divs
-			var contentDivs = document.querySelectorAll('.right-column > div');
-			for (var i = 0; i < contentDivs.length; i++) {
-				contentDivs[i].style.display = 'none';
-			}
-
-			// Show the selected content div
-			var selectedContent = document.getElementById(contentId);
-			selectedContent.style.display = 'block';
-
-			// Set the active button class
-			var buttons = document.querySelectorAll('.button');
-			for (var i = 0; i < buttons.length; i++) {
-				buttons[i].classList.remove('active');
-			}
-			document.querySelector('[data-target="'+contentId+'"]').classList.add('active');
+		  // Hide all content divs
+		  var contentDivs = document.querySelectorAll('.right-column > .content');
+		  for (var i = 0; i < contentDivs.length; i++) {
+			contentDivs[i].style.display = 'none';
+		  }
+	  
+		  // Show the selected content div
+		  var selectedContent = document.getElementById(contentId);
+		  selectedContent.style.display = 'block';
+	  
+		  // Set the active button class
+		  var buttons = document.querySelectorAll('.button');
+		  for (var i = 0; i < buttons.length; i++) {
+			buttons[i].classList.remove('active');
+		  }
+		  document.querySelector('[data-target="'+contentId+'"]').classList.add('active');
+	  
+		  // Scroll to the top of the container div
+		  var containerDiv = document.getElementById('content-container');
+		  containerDiv.scrollTop = 0;
 		}
-	</script>
+	  </script>
+	  
+
 </body>	
